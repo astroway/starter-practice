@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: starter-practice
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: ASTROWAY_API_KEY
+        sync: false
