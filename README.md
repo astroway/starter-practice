@@ -4,6 +4,8 @@ A practitioner's report desk on the [AstroWay API](https://api.astroway.info): c
 
 **Live demo: [api.astroway.info/demo/practice/](https://api.astroway.info/demo/practice/)**
 
+[![The live demo: sixteen reports, each with its credit cost and a finished sample PDF](.github/screenshot.png)](https://api.astroway.info/demo/practice/)
+
 Sixteen reports live under one prefix, `POST /v1/reports/<type>`. Each returns a URL to a rendered PDF, its page count, its size and when it expires. Every one of them takes a `whitelabel` block, so the file that reaches your client carries your name and not ours.
 
 ## Run it
